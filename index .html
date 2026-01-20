@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Online Examination System</h1>
+
+<div class="container">
+
+    <div id="startSection">
+        <input type="text" id="studentName" placeholder="Enter Student Name">
+        <button onclick="startExam()">Start Exam</button>
+    </div>
+
+    <div id="examSection" style="display:none;">
+        <h3 id="timer">Time Left: 60</h3>
+        <h2 id="question"></h2>
+
+        <div id="options"></div>
+
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="resultSection" style="display:none;">
+        <h2>Exam Result</h2>
+        <p id="result"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
